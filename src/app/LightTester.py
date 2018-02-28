@@ -24,5 +24,14 @@ class LightTester(object):
                     count+=1
         return count
 
+    def coordinates(self,x,y,x1,y1):
+        for i in range(y,y1+1):
+            for j in range(x,x1+1):
+                self.lights[i][j] = True
+        for i in self.lights:
+            print(i)
+        return(self.count())
+
+
 if __name__ == "__main__":
     LightTester().__init__

@@ -15,9 +15,14 @@ class Test(unittest.TestCase):
         a = LightTester(3)
         cmd = "toggle"
         a.apply(cmd)
-        print(a.lights)
-        print("count is: ",a.count())
         self.assertTrue(a.count() == 1)
+
+    def test_coordinates(self):
+        a=LightTester(5)
+        x,y,x1,y1 = 1,1,2,4
+        a.coordinates(x,y,x1,y1)
+        print(a.count())
+        self.assertTrue(a.count() == 8)
 
 if __name__ == "__main__":
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(Test)
