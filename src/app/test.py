@@ -1,7 +1,7 @@
 import unittest
 
 
-from app.LightTester import *
+from LightTester import *
 
 class Test(unittest.TestCase):
     
@@ -10,3 +10,7 @@ class Test(unittest.TestCase):
         a.apply('toggle')
         
         self.assertTrue(a.lights[0][1] == True)
+
+if __name__ == "__main__":
+    suite = unittest.defaultTestLoader.loadTestsFromTestCase(Test)
+    unittest.TextTestRunner().run(suite)

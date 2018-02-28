@@ -22,3 +22,6 @@ class LightTester(object):
             if i == True:
                 count+=1
         return count
+
+if __name__ == "__main__":
+    LightTester().__init__
