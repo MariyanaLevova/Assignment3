@@ -12,12 +12,10 @@ import sys
 from setuptools import setup
 
 # Add here console scripts and other entry points in ini-style format
-entry_points = """
-[console_scripts]
-# script_name = assignment3.module:function
-# For example:
-# fibonacci = assignment3.skeleton:run
-"""
+entry_points = { 
+        'console_scripts':['solve_led --input data/input_assign3.txt=app.main:first']
+        }
+
 
 
 def setup_package():

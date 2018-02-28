@@ -1,5 +1,5 @@
 import cmd
-from app.LightTester import *
+from LightTester import *
 
 def main(filename,N):
     
@@ -16,8 +16,18 @@ def main(filename,N):
         
     print("#occupied: ",lights.count())
     
-print(main('data',1000)) #400,410
-#print(main('dataA',5000)) # won't compute 
-print(main('dataB',11000)) #29,942,250
-print(main('dataC',1000)) #477,452
-print(main('dataD',1000)) #349,037
+
+def first():
+    print(main('data',1000)) #400,410
+
+def A():    
+    print(main('dataA',5000)) # won't compute 
+
+def B():
+    print(main('dataB',11000)) #29,942,250
+
+def C():
+    print(main('dataC',1000)) #477,452
+
+def D():
+    print(main('dataD',1000)) #349,037
