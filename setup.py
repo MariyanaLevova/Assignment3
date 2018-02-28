@@ -12,7 +12,7 @@ import sys
 from setuptools import setup
 
 # Add here console scripts and other entry points in ini-style format
-entry_points = {'console_scripts':['solve_led=src.app.command_line:run']}
+entry_points = {'console_scripts':['solve_led=app.command_line:run']}
 
 
 def setup_package():
