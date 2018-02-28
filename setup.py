@@ -12,9 +12,6 @@ import sys
 from setuptools import setup
 
 # Add here console scripts and other entry points in ini-style format
-entry_points = { 
-        'console_scripts':['solve_led --input data/input_assign3.txt=app.main:first']
-        }
 
 
 
