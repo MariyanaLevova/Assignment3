@@ -1,0 +1,12 @@
+import unittest
+
+
+from app.LightTester import *
+
+class Test(unittest.TestCase):
+    
+    def test_apply(self,cmd):
+        a = LightTester(3)
+        a.apply('toggle')
+        
+        self.assertTrue(a.lights[0][1] == True)
