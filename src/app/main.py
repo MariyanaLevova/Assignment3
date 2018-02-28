@@ -1,5 +1,5 @@
 import cmd
-from LightTester import *
+from app.LightTester import *
 
 def mainF(filename,N):
     
