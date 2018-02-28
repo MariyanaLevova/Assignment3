@@ -1,5 +1,5 @@
-import main as m
-from main import mainF
+import app.main as m
+from app.main import *
 
 def run():
     x = input("prompt: ")
@@ -14,3 +14,6 @@ def run():
     elif x == 'data/input_assign3_d.txt' or x == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_d.txt':
         m.mainF.D()
 run()
+
+if __name__ == '__main__':
+    run()
