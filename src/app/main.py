@@ -31,3 +31,6 @@ def C():
 
 def D():
     print(main('dataD',1000)) #349,037
+
+if __name__ == '__main__':
+    main()
