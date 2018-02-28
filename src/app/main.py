@@ -1,7 +1,7 @@
 import cmd
 from LightTester import *
 
-def main(filename,N):
+def mainF(filename,N):
     
     lights = LightTester(N)
     instructions = lights.parse(filename)
@@ -18,19 +18,19 @@ def main(filename,N):
     
 
 def first():
-    print(main('data',1000)) #400,410
+    print(mainF('data',1000)) #400,410
 
 def A():    
-    print(main('dataA',5000)) # won't compute 
+    print(mainF('dataA',5000)) # won't compute 
 
 def B():
-    print(main('dataB',11000)) #29,942,250
+    print(mainF('dataB',11000)) #29,942,250
 
 def C():
-    print(main('dataC',1000)) #477,452
+    print(mainF('dataC',1000)) #477,452
 
 def D():
-    print(main('dataD',1000)) #349,037
+    print(mainF('dataD',1000)) #349,037
 
 if __name__ == '__main__':
     main()

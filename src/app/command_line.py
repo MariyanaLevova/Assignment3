@@ -1,16 +1,16 @@
 import main as m
-from main import *
+from main import mainF
 
 def run():
     x = input("prompt: ")
     if x == 'data/input_assign3.txt' or x == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3.txt':
-        m.first()
+        m.mainF.first()
     elif x == 'data/input_assign3_a.txt' or x == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_a.txt':
-        m.A()
+        m.mainF.A()
     elif x == 'data/input_assign3_b.txt' or x == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_b.txt':
-        m.B()
+        m.mainF.B()
     elif x == 'data/input_assign3_c.txt' or x == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_c.txt':
-        m.C()
+        m.mainF.C()
     elif x == 'data/input_assign3_d.txt' or x == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_d.txt':
-        m.D()
+        m.mainF.D()
 run()
