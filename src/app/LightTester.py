@@ -19,8 +19,9 @@ class LightTester(object):
     def count(self):
         count = 0
         for i in self.lights:
-            if i == True:
-                count+=1
+            for j in i:
+                if j == True:
+                    count+=1
         return count
 
 if __name__ == "__main__":

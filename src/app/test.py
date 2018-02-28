@@ -13,10 +13,11 @@ class Test(unittest.TestCase):
     def test_count(self):
         count = 0
         a = LightTester(3)
-        a.apply('toggle')
+        cmd = "toggle"
+        a.apply(cmd)
         print(a.lights)
-        print(a.count())
-        self.assertTrue(a.count == 1)
+        print("count is: ",a.count())
+        self.assertTrue(a.count() == 1)
 
 if __name__ == "__main__":
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(Test)
