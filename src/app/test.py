@@ -5,11 +5,18 @@ from LightTester import *
 
 class Test(unittest.TestCase):
     
-    def test_apply(self,cmd):
+    def test_apply(self):
         a = LightTester(3)
         a.apply('toggle')
-        
         self.assertTrue(a.lights[0][1] == True)
+
+    def test_count(self):
+        count = 0
+        a = LightTester(3)
+        a.apply('toggle')
+        print(a.lights)
+        print(a.count())
+        self.assertTrue(a.count == 1)
 
 if __name__ == "__main__":
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(Test)
