@@ -13,7 +13,6 @@ def run():
         m.C()
     elif x == 'data/input_assign3_d.txt' or x == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_d.txt':
         m.D()
-run()
 
 if __name__ == '__main__':
     run()

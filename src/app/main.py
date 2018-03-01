@@ -14,23 +14,23 @@ def mainF(filename,N):
         y1 = int(cmd[4])       
         lights.apply(cmd0,x,y,x1,y1)
         
-    print("#occupied: ",lights.count())
+    print("# of lights on: ",lights.count())
     
 
 def first():
-    print(mainF('data',1000)) #400,410
+    mainF('data',1000) #400,410
 
 def A():    
-    print(mainF('dataA',5000)) # won't compute 
+    mainF('dataA',5000) # 25,000,000 
 
 def B():
-    print(mainF('dataB',11000)) #29,942,250
+    mainF('dataB',11000) #29,942,250
 
 def C():
-    print(mainF('dataC',1000)) #477,452
+    mainF('dataC',1000) #477,452
 
 def D():
-    print(mainF('dataD',1000)) #349,037
+    mainF('dataD',1000) #349,037
 
 if __name__ == '__main__':
     main()
