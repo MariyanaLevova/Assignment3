@@ -1,15 +1,13 @@
 import cmd
 from app.LightTester import *
 
-def program(filename):
-    print(filename)
-
 def main():
     import sys
     filename = sys.argv[1]
-    program(filename)
-    if filename is 'data':
+    if filename == 'data':
         first()
+    elif filename == 'next':
+        D()
 
 def mainF(filename,N):
     
