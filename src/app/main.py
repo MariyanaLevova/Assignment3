@@ -1,6 +1,16 @@
 import cmd
 from app.LightTester import *
 
+def program(filename):
+    print(filename)
+
+def main():
+    import sys
+    filename = sys.argv[1]
+    program(filename)
+    if filename is 'data':
+        first()
+
 def mainF(filename,N):
     
     lights = LightTester(N)
@@ -21,7 +31,7 @@ def first():
     mainF('data',1000) #400,410
 
 def A():    
-    mainF('dataA',5000) # 25,000,000 
+    mainF('dataA',5000) # 24,999,879 
 
 def B():
     mainF('dataB',11000) #29,942,250
