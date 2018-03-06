@@ -1,4 +1,5 @@
 import unittest
+import numpy as np
 
 
 from LightTester import *
@@ -16,6 +17,7 @@ class Test(unittest.TestCase):
         b.apply('turn off',3,0,3,3)
         self.assertTrue(b.lights[3][3] == False)
 
+
     def test_count(self):
         count = 0
         a = LightTester(3)
@@ -23,6 +25,13 @@ class Test(unittest.TestCase):
         cmd = "switch"
         a.apply(cmd,x,y,x1,y1)
         self.assertTrue(a.count() == 4)
+        b = LightTester(3)
+        b.apply('turn on',0,0,2,2)
+        self.assertTrue(b.count() == 9)
+        b.apply('turn off',1,1,4,4)
+        self.assertTrue(b.count() == 5)
+        #for row in b.lights:
+            #print(row)
 
     
 
