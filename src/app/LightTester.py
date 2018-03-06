@@ -2,6 +2,7 @@ import re #regex module
 import urllib.request
 import requests
 import urllib # to open and read from a URL
+import numpy as np
 
 class LightTester(object):
      
