@@ -8,7 +8,7 @@ class LightTester(object):
      
     def __init__(self,N):
         self.size = N
-        self.lights = [[False]*N for _ in range(N)]
+        self.lights = [[0]*N for _ in range(N)]
               
     def apply(self,cmd,x,y,x1,y1):
         
@@ -32,14 +32,14 @@ class LightTester(object):
         for i in range(y,y1+1): # arrays
             for j in range(x,x1+1): 
                 if cmd == 'turn on':# elements
-                    self.lights[i][j] = True
+                    self.lights[i][j] = 1
                 elif cmd == 'turn off':
-                    self.lights[i][j] = False
+                    self.lights[i][j] = 0
                 elif cmd == 'switch':
-                    if self.lights[i][j] == True:
-                        self.lights[i][j] = False
+                    if self.lights[i][j] == 1:
+                        self.lights[i][j] = 0
                     else:
-                        self.lights[i][j] = True
+                        self.lights[i][j] = 1
                 else:
                     continue
         
@@ -47,7 +47,7 @@ class LightTester(object):
         count = 0
         for i in self.lights:
             for j in i:
-                if j == True:
+                if j == 1:
                     count+=1
         return count
 

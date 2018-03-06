@@ -9,13 +9,13 @@ class Test(unittest.TestCase):
     def test_apply(self):
         a = LightTester(3)
         a.apply('switch', 0,0,1,1)
-        self.assertTrue(a.lights[0][1] == True)
+        self.assertTrue(a.lights[0][1] == 1)
         b = LightTester(5)
         b.apply('turn on',1,1,3,3)
-        self.assertTrue(b.lights[3][4] == False)
-        self.assertTrue(b.lights[2][3] == True)
+        self.assertTrue(b.lights[3][4] == 0)
+        self.assertTrue(b.lights[2][3] == 1)
         b.apply('turn off',3,0,3,3)
-        self.assertTrue(b.lights[3][3] == False)
+        self.assertTrue(b.lights[3][3] == 0)
 
 
     def test_count(self):
