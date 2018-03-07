@@ -16,7 +16,9 @@ class Test(unittest.TestCase):
         self.assertTrue(b.lights[2][3] == 1)
         b.apply('turn off',3,0,3,3)
         self.assertTrue(b.lights[3][3] == 0)
-
+        c = LightTester(5)
+        c.apply('turn on',2,2,0,0)
+        self.assertTrue(c.count() == 9)
 
     def test_count(self):
         count = 0

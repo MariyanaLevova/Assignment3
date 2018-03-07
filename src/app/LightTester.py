@@ -29,8 +29,8 @@ class LightTester(object):
         if y1 > self.size-1:
             y1 = self.size-1
         
-        for i in range(y,y1+1): # arrays
-            for j in range(x,x1+1): 
+        for i in range(min(y,y1),max(y,y1)+1): # arrays
+            for j in range(min(x,x1),max(x,x1)+1): 
                 if cmd == 'turn on':# elements
                     self.lights[i][j] = 1
                 elif cmd == 'turn off':
