@@ -3,7 +3,8 @@ from app.LightTester import *
 
 def main():
     import sys
-    filename = sys.argv[1]
+    input = sys.argv[1]
+    filename = sys.argv[2]
     if filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3.txt' or filename == 'data/input_assign3.txt' or filename == '--input http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3.txt':
         first()
     elif filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_a.txt' or filename == 'data/input_assign3_a.txt' or filename == '--input http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_a.txt':
