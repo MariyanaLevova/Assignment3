@@ -3,17 +3,17 @@ from app.LightTester import *
 
 def main():
     import sys
-    input = sys.argv[1]
+    input1 = sys.argv[1]
     filename = sys.argv[2]
-    if filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3.txt' or filename == 'data/input_assign3.txt' or filename == '--input http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3.txt':
+    if filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3.txt' or filename == 'data/input_assign3.txt':
         first()
-    elif filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_a.txt' or filename == 'data/input_assign3_a.txt' or filename == '--input http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_a.txt':
+    elif filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_a.txt' or filename == 'data/input_assign3_a.txt':
         A()
-    elif filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_b.txt' or filename == 'data/input_assign3_b.txt' or filename == '--input http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_b.txt':
+    elif filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_b.txt' or filename == 'data/input_assign3_b.txt':
         B()
-    elif filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_c.txt' or filename == 'data/input_assign3_c.txt' or filename == '--input http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_c.txt':
+    elif filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_c.txt' or filename == 'data/input_assign3_c.txt':
         C()
-    elif filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_d.txt' or filename == 'data/input_assign3_d.txt' or filename == '--input http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_d.txt':
+    elif filename == 'http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3_d.txt' or filename == 'data/input_assign3_d.txt':
         D()
 
 def mainF(filename,N):
